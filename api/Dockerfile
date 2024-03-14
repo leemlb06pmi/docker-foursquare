@@ -1,7 +1,9 @@
 FROM --platform=linux/amd64 python:3.7-alpine
 WORKDIR /usr/src/app
 
-COPY ./ ./
+#COPY ./ ./
+
+RUN git pull https://github.com/leemlb06pmi/docker-foursquare
 
 RUN apk update \
     && apk add postgresql-dev gcc python3-dev musl-dev

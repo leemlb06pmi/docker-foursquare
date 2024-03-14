@@ -10,6 +10,6 @@ DATABASE_URL = os.environ.get('DATABASE_URL')
 @app.route('/locations')
 def locations():
     locations = [{
-        'id': 1, 'name': 'los tacos numero uno dos tres'
+        'id': 1, 'name': 'los tacos numero uno dos NOW ON GITHUB'
     }]
     return jsonify({'locations': locations})
